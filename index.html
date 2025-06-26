@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prosper Homes - Stop Losing HVAC Bids</title>
     <link rel="icon" href="assets/favicon-32x32.png" type="image/png" />
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prosper Homes - Stop Losing HVAC Bids</title>
+        <link rel="icon" href="assets/favicon-32x32.png" type="image/png" />
     <style>
         * {
             margin: 0;
@@ -24,37 +31,50 @@
             padding: 0 20px;
         }
         
+        /* Header */
+        .header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 20px 0;
+            z-index: 1000;
+        }
+        
+        .header .container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 45px;
+            width: auto;
+        }
+        
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
-            padding: 80px 0;
+            padding: 120px 0 80px;
             text-align: center;
         }
         
         .hero h1 {
             font-size: 3.5rem;
             font-weight: 900;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             line-height: 1.1;
-        }
-        
-        .hero .subtitle {
-            font-size: 1.8rem;
-            font-weight: 300;
-            margin-bottom: 15px;
-            color: #3498db;
         }
         
         .hero .tagline {
             font-size: 1.3rem;
             opacity: 0.9;
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto 40px;
         }
         
         .cta-primary {
-            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            background: linear-gradient(135deg, #2E8B57, #3e8751);
             color: white;
             padding: 18px 40px;
             font-size: 1.2rem;
@@ -88,7 +108,7 @@
             font-size: 2.5rem;
             font-weight: 800;
             margin-bottom: 30px;
-            color: #2c3e50;
+            color: #2E8B57;
             text-align: center;
         }
         
@@ -109,7 +129,7 @@
         .stat-number {
             font-size: 3rem;
             font-weight: 900;
-            color: #e74c3c;
+            color: #2E8B57;
             display: block;
         }
         
@@ -131,7 +151,7 @@
             font-weight: 800;
             text-align: center;
             margin-bottom: 60px;
-            color: #2c3e50;
+            color: #2E8B57;
         }
         
         .solution-grid {
@@ -146,7 +166,7 @@
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 20px;
-            color: #2c3e50;
+            color: #2E8B57;
         }
         
         .solution-content p {
@@ -172,7 +192,7 @@
             content: "✓";
             position: absolute;
             left: 0;
-            color: #34a853;
+            color: #2E8B57;
             font-weight: bold;
             font-size: 1.2rem;
         }
@@ -195,7 +215,7 @@
         /* Results Section */
         .results {
             padding: 80px 0;
-            background: linear-gradient(135deg, #34a853, #2ecc71);
+            background: linear-gradient(135deg, #2E8B57, #15622a);
             color: white;
             text-align: center;
         }
@@ -294,11 +314,11 @@
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #3498db;
+            border-color: #4a9b5e;
         }
         
         .cta-secondary {
-            background: #3498db;
+            background: #2E8B57;
             color: white;
             padding: 15px 30px;
             font-size: 1.1rem;
@@ -311,17 +331,13 @@
         }
         
         .cta-secondary:hover {
-            background: #2980b9;
+            background: #2fa260;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
-            }
-            
-            .hero .subtitle {
-                font-size: 1.4rem;
             }
             
             .hero .tagline {
@@ -342,15 +358,25 @@
             .container {
                 padding: 0 15px;
             }
+            
+            .logo {
+                height: 35px;
+            }
         }
     </style>
 </head>
 <body>
+    <!--   Logo Header -->
+    <header class="header">
+        <div class="container">
+            <img src="assets/prosper-homes-logo.png" alt="Prosper Homes" class="logo">
+        </div>
+    </header>
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1>Stop Competing on Price Alone</h1>
-            <p class="tagline">Give homeowners the proof they need to choose efficient equipment over "race-to-the-bottom" bids</p>
+            <p class="tagline">Give homeowners the proof they need to choose efficient HVAC equipment over "race-to-the-bottom" bids</p>
             <a href="#contact" class="cta-primary">Get Your Free Quote Upgrade</a>
         </div>
     </section>
@@ -361,7 +387,7 @@
             <h2>Your Time Is Going to Waste</h2>
             <div class="problem-grid">
                 <div>
-                    <p>You spend hours on every bid between the home visit, load calc, system design and homeowner education. These details are what separate you from fly-by-night competitors.</p>
+                    <p>You spend hours on every bid between the home visit, load calc, system design and homeowner education. This is what separates you from fly-by-night competitors.</p>
                     <p>But homeowners can't see the difference. They choose the cheapest option, or worse - ignore your bid entirely.</p>
                     <p>And every lost bid wastes your most valuable resource: your expertise and time as a business owner.</p>
                 </div>
@@ -381,7 +407,7 @@
             <div class="solution-grid">
                 <div class="solution-content">
                     <h3>Operating Cost > Install Cost</h3>
-                    <p>Over 12 years, utility bills cost 2-3x more than the installation. Give homeowners the full picture of what the cheapest bid will actually cost them.</p>
+                    <p>Over 12 years, utility bills cost 2-3x more than the installation. Show homeowners what a cheap bid will actually cost them.</p>
                     <ul class="benefits-list">
                         <li>Total cost of ownership over 12 years</li>
                         <li>Payback period of each package</li>
@@ -392,7 +418,7 @@
                 <div class="chart-placeholder">
                     <img src="assets/2025_06_25_stacked_bar.png" alt="Lifetime System Cost Comparison Chart" style="max-width: 100%; height: auto;" />
                     <p style="margin-top: 10px; font-style: italic; color: #999;">
-                        Lifetime System Cost: Joe's Basic AC vs Your Heat Pump
+                        Lifetime Cost: Joe's Basic AC vs Your Heat Pump
                     </p>
                 </div>
             </div>
@@ -402,19 +428,19 @@
     <!-- Results Section -->
     <section class="results">
         <div class="container">
-            <h2>Deliver More Value With Each Quote</h2>
+            <h2>Make the Most of Your Expertise</h2>
             <div class="results-grid">
                 <div class="result-card">
-                    <span class="result-number">24%</span>
+                    <span class="result-number">+31%</span>
                     <div class="result-label">Higher close rate</div>
                 </div>
                 <div class="result-card">
-                    <span class="result-number">$2,200</span>
+                    <span class="result-number">$2,600</span>
                     <div class="result-label">Boost to average job value</div>
                 </div>
                 <div class="result-card">
-                    <span class="result-number">90%</span>
-                    <div class="result-label">Of homeowners care about energy costs</div>
+                    <span class="result-number">1 minute</span>
+                    <div class="result-label">Of your time to upgrade a quote</div>
                 </div>
             </div>
         </div>
@@ -424,11 +450,10 @@
     <section class="cta-section" id="contact">
         <div class="container">
             <h2>Ready to Win More Bids?</h2>
-            <p>Send us a recent quote and we'll show you how to turn price-shoppers into confident buyers.</p>
             
             <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
-                <h3>Get Your Free Quote Upgrade</h3>
+                <!--<h3>Get Your Free Quote Upgrade</h3> -->
                 
                 <div class="form-group">
                     <label for="name">Company Name *</label>
@@ -450,7 +475,7 @@
                     <textarea id="message" name="message" rows="4" placeholder="e.g., Losing bids to cheaper competitors, hard to justify premium equipment costs, spending too much time on quotes that don't close"></textarea>
                 </div>
                 
-                <button type="submit" class="cta-secondary">Analyze My Quote (Free)</button>
+                <button type="submit" class="cta-secondary">Show Me How This Works</button>
                 
                 <p style="font-size: 0.9rem; color: #666; margin-top: 20px; text-align: center;">
                     No risk, no cost, no commitment. Just see how it works.
