@@ -470,23 +470,6 @@
             });
         });
         
-        // Form submission (you'll need to connect this to your backend)
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Here you would typically send to your backend
-            console.log('Form submitted:', data);
-            
-            // Show success message (replace with your actual form handler)
-            alert('Thanks! We\'ll analyze your quote and get back to you within 24 hours.');
-            
-            // Reset form
-            this.reset();
-        });
     </script>
 </body>
 </html>
