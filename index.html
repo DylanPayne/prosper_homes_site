@@ -89,6 +89,7 @@
             font-weight: 800;
             margin-bottom: 30px;
             color: #2c3e50;
+            text-align: center;
         }
         
         .problem p {
@@ -334,8 +335,8 @@
             }
             
             .results-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
             }
             
             .container {
@@ -360,13 +361,13 @@
         <div class="container">
             <div class="problem-grid">
                 <div>
-                    <h2>HVAC Bids Are Confusing</h2>
-                    <p>Homeowners usually get three quotes that focus on one thing: upfront cost. They can't see that your premium system will save them $600/year in utility bills.</p>
-                    <p>Meanwhile, you're stuck explaining why your $15K heat pump will save them money compared to Joe's $12K single-speed AC unit.</p>
+                    <h2>End the Race to the Bottom</h2>
+                    <p>Homeowners get multiple quotes focused on one thing: upfront cost. They can't see that your premium system will save them $600/year in utility bills.</p>
+                    <p>You're stuck trying to convince them your $15K heat pump is a better deal than Joe's $12K single-speed AC unit.</p>
                 </div>
                 <div class="stat-highlight">
-                    <span class="stat-number">70%</span>
-                    <div class="stat-label">of homeowners choose the lowest bid</div>
+                    <span class="stat-number">3</span>
+                    <div class="stat-label">average # of HVAC bids homeowners compare</div>
                 </div>
             </div>
         </div>
@@ -382,14 +383,14 @@
                     <h3>Operating Cost > Install Cost</h3>
                     <p>Over 12 years, utility bills cost 2-3x more than the equipment. Give homeowners the full picture with clear lifetime cost comparisons.</p>
                     <ul class="benefits-list">
-                        <li>Monthly bill impact for each system option</li>
                         <li>Total cost of ownership over 12 years</li>
                         <li>Available rebates and tax credits</li>
-                        <li>Payback period and net savings</li>
+                        <li>Payback period</li>
+                        <li>Energy savings underlying drivers</li>
                     </ul>
                 </div>
                 <div class="chart-placeholder">
-                    <img src="assets/2025_06_25 stacked bar.png" alt="Lifetime System Cost Comparison Chart" style="max-width: 100%; height: auto;" />
+                    <img src="assets/2025_06_25_stacked_bar.png" alt="Lifetime System Cost Comparison Chart" style="max-width: 100%; height: auto;" />
                     <p style="margin-top: 10px; font-style: italic; color: #999;">
                         Lifetime System Cost: Joe's Basic AC vs Your Heat Pump
                     </p>
@@ -423,9 +424,10 @@
     <section class="cta-section" id="contact">
         <div class="container">
             <h2>Ready to Win More Bids?</h2>
-            <p>Send us one of your recent quotes and we'll show you exactly how our savings analysis would help you close the deal.</p>
+            <p>Send us one of your recent quotes and we'll help you close the deal.</p>
             
-            <form class="contact-form" id="contactForm">
+            <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact" />
                 <h3>Get Your Free Quote Analysis</h3>
                 
                 <div class="form-group">
