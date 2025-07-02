@@ -23,15 +23,14 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
+    <div class="container" style="padding-bottom: 0; margin-bottom: 0;">
       <h1>Want to Know How Much You’ll Save?</h1>
-      <p class="tagline">Share your info or bids and we’ll show how a better HVAC system can lower your bills.</p>
-      <a href="#contact" class="cta-primary">Get Your Free Estimate</a>
+      <p class="tagline">We’ll show you how much that new HVAC system should lower your bills.</p>
     </div>
   </section>
 
   <!-- Contact Form -->
-  <section class="cta-section" id="contact">
+  <section class="cta-section" id="contact" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); margin-top: 0; padding-top: 0;">
     <div class="container">
       <form class="contact-form" name="homeowner-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data" action="/thank-you.html">
         <input type="hidden" name="form-name" value="homeowner-contact" />
@@ -62,7 +61,7 @@
         </div>
 
         <div class="form-group">
-          <label for="file">Upload Quote (PDF optional)</label>
+          <label for="file">Upload Quote (PDF)</label>
           <input type="file" id="file" name="file" accept=".pdf" />
         </div>
 
